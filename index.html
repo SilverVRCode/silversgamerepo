@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Game Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Educational Game Portal</h1>
+        <nav>
+            <button class="nav-btn active" data-site="https://kahoot.it">Kahoot</button>
+            <button class="nav-btn" data-site="https://quizlet.com">Quizlet</button>
+            <button class="nav-btn" data-site="https://coolmathgames.com">Cool Math</button>
+            <button class="nav-btn" data-site="https://scratch.mit.edu">Scratch</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="iframe-container">
+            <iframe id="site-frame" src="https://kahoot.it" allowfullscreen></iframe>
+        </div>
+        <div class="custom-url-container">
+            <input type="text" id="custom-url" placeholder="Enter a website URL (e.g., https://example.com)">
+            <button id="load-custom">Load Site</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>This website is for educational purposes only.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
